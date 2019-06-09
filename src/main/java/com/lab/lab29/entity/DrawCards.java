@@ -16,7 +16,13 @@ public class DrawCards {
 		// TODO Auto-generated constructor stub
 	}
 
-	
+	public DrawCards(boolean success, ArrayList<Cards> cards, String deck_id, Integer remaining) {
+		super();
+		this.success = success;
+		this.cards = cards;
+		this.deck_id = deck_id;
+		this.remaining = remaining;
+	}
 
 	public boolean isSuccess() {
 		return success;
@@ -50,13 +56,11 @@ public class DrawCards {
 		this.remaining = remaining;
 	}
 
-
 	@Override
 	public String toString() {
-		return "DrawCards [success=" + success + ", cards=" + cards + ", deck_id=" + deck_id + ", remaining="
-				+ remaining + "]";
+		return "DrawCards [success=" + success + ", deck_id=" + deck_id + ", remaining=" + remaining + "]";
 	}
-	
-	
-	
+
 }
+
+	
